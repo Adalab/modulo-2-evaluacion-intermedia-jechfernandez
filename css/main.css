@@ -1,3 +1,47 @@
-/*font-family: 'Abril Fatface', cursive;
-font-family: 'Roboto', sans-serif;*/
+.page {
+  height: 100vh;
+  margin: 0;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #faf3dd;
+  justify-content: space-around;
+  align-items: center;
+}
 
+.page__main{
+    margin: auto;
+    padding:0;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction:column;
+}
+
+.page__main--title{
+    font-family: "Abril Fatface", cursive;
+    font-size: 40px;
+    color: #08415c;
+}
+
+.page__main--title:hover{
+    color: #e9afa3;
+}
+
+.page__main--text{
+    font-family: 'Roboto', sans-serif;
+    color: #283044;
+}
+
+.page__main--input-label{
+    color: #08415c;
+}
+
+.page__main--input{
+    background-color:#f9dbbd;
+    height:30px;
+    text-align:center;
+    transition-duration: 0.4s;
+    
+
+/*Problemas con NESTING*/
