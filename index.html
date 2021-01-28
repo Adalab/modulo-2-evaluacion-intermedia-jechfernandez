@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jechfernandez's pick a number</title>
+    <title>Jechfernandez's guess the number</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
+<body class="page">
+    <header class="page__header">
+        <h1 class="page__header--title">Adivina el número</h1>
+    </header>
+
+    <main class="page__main">
+        <p class="page__main--text">Introduce aquí tu número</p>
+        <label for="guessthenumber" class="page__main--input-label"></label>
+        <input type="text" class="page__main--input-label" id="guessthenumber">
+        <button class="btn">Prueba</button>
+    </main>
+
+    <footer class="page__footer">
+        <p class="page__footer--text">
+            Escribe un número y dale a <em>prueba</em>
+        </p>
+        <div class="page__footer--counter">1</div>
+    </footer>
+
     <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
