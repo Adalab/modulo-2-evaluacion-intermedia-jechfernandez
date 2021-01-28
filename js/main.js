@@ -3,8 +3,8 @@
 const input = document.querySelector('.page__main--input');
 const btn = document.querySelector('.button');
 const resetBtn = document.querySelector ('.reset-button');
-const footerText = document.querySelector('.page__footer--text');
-const counter = document.querySelector('.page__footer--counter');
+const cluesText = document.querySelector('.clues__text');
+const counter = document.querySelector('.clues__counter');
 
 let timesTried=0;
 counter.innerHTML=0;
@@ -20,27 +20,27 @@ function guessTheNumber(){
     console.log(inputNumber);
 
     if (inputNumber === myRandomNumber) {
-        footerText.innerHTML = '¡Has ganado, campeona!';
+        cluesText.innerHTML = '¡Has ganado, campeona!';
     }
 
     else if (inputNumber > 100) {
-        footerText.innerHTML = 'Demasiado alto, el número es menor que 100';
+        cluesText.innerHTML = 'Demasiado alto, el número es menor que 100';
     }
 
     else if (inputNumber < 0) {
-        footerText.innerHTML = 'Prueba con un número positivo';
+        cluesText.innerHTML = 'Prueba con un número positivo';
     }
 
     else if (inputNumber < myRandomNumber) {
-        footerText.innerHTML = 'Demasiado bajo, prueba otra vez';
+        cluesText.innerHTML = 'Demasiado bajo, prueba otra vez';
     }
 
     else if (inputNumber > myRandomNumber) {
-        footerText.innerHTML = 'Demasiado alto, prueba otra vez';
+        cluesText.innerHTML = 'Demasiado alto, prueba otra vez';
     }
 
     else {
-        footerText.innerHTML = 'Introduce un número';
+        cluesText.innerHTML = 'Introduce un número';
     }
 
     timesTried = timesTried+1;
